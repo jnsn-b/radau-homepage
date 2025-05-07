@@ -24,7 +24,7 @@ enableRobotsTXT = true
     Content = "Die nachhaltige Musikbox für Kinder. Ohne Werbung. Ohne Cloud."
     
 [params.assets]
-  customCSS = ["assets/css/extended/custom.css"]
+  customCSS = ["public/assets/css/custom.css"]
   
 [markup]
   [markup.goldmark]
