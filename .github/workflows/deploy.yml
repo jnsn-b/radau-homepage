@@ -5,12 +5,14 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # 👈 wichtig für Schreibrechte auf gh-pages
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repo
+      - name: Checkout main branch
         uses: actions/checkout@v4
 
       - name: Setup Hugo
@@ -19,7 +21,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build Hugo Site
+      - name: Build site
         run: hugo --minify --baseURL="https://jnsn-b.github.io/radau-homepage/"
 
       - name: Deploy to GitHub Pages
