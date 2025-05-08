@@ -25,7 +25,7 @@ enableRobotsTXT = true
     Content = "Die nachhaltige Musikbox für Kinder. Ohne Werbung. Ohne Cloud."
     
 [params.assets]
-  customCSS = ["css/extended/custom.css"]
+  customCSS = ["/radau-homepage/css/extended/custom.css"]
   
 [markup]
   [markup.goldmark]
